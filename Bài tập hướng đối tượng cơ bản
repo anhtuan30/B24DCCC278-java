@@ -1,0 +1,40 @@
+package b24dccc278.exercise;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        int x = Integer.parseInt(args[0]);
+        int y = Integer.parseInt(args[1]);
+
+        if (x <= 0 || y <= 0){
+            System.out.println("Chiều dài và chiều rộng phải là số nguyên dương.");
+        }
+        hinhChuNhat hcn = new hinhChuNhat(x, y);
+    
+            int chuVi = hcn.tinhChuVi();
+            int dienTich = hcn.tinhDienTich();
+
+            System.out.println("Chu vi cua hinh chu nhat la: " + chuVi);
+            System.out.println("Dien tich cua hinh chu nhat la: " + dienTich);
+    }
+}
+
+class hinhChuNhat{
+
+    private final int x;
+    private final int y;
+    
+    public hinhChuNhat(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+    
+    public int tinhChuVi(){
+        return (x + y) * 2;
+    }
+
+    public int tinhDienTich(){
+        return (x * y);
+    }
+
+}
