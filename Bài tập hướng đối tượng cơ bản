@@ -35,6 +35,8 @@ public class Main {
             int chuVi = hcn.tinhChuVi();
             int dienTich = hcn.tinhDienTich();
 
+            System.out.println("Chieu rong của hinh chu nhat: " + y)
+            System.out.println("Chieu dai cua hinh chu nhat: " + x) 
             System.out.println("Chu vi cua hinh chu nhat la: " + chuVi);
             System.out.println("Dien tich cua hinh chu nhat la: " + dienTich);
     }
